@@ -6,11 +6,55 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login_style.css" >
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="login-modal">
+            <h3>Login</h3>
+            <ul class="form">
+                <li class="textbox">
+                    <input type="text" id="username" name="user" required />
+                    <label for="username">
+                        <span class="fontawesome-user"></span>
+                        <span class="lbl">username</span>
+                    </label>
+                </li>
+                <li class="textbox">
+                    <input type="password" id="password" name="password" required />
+                    <label for="password">
+                        <span class="fontawesome-key"></span>
+                        <span class="lbl">password</span>
+                    </label>
+                </li>
+
+            </ul>
+            <input type="hidden" name="command" value="login"/>
+            <button>Submit</button>
+        </div>
+
+        <!--<div>
+            <h1>Sign In</h1>
+            <form action="Controller" method="POST" id="login"  class="form">
+                <input type="email" placeholder="Username" name="user" required="required"/><br/><br/>
+                <input type="password" placeholder="Password" name="senha_l" required="required"/><br/><br/>
+                <input type="hidden" name="command" value="login"/>
+                <input type="submit" name="login" value="Sign in"/>
+            </form>
+            <br><br><br><br>
+
+            <form action="Controller" method="POST" id="cadastro">
+                <input type="text" placeholder="First Name" name="f_name" required="required"><br/><br/>
+                <input type="text" placeholder="Last Name" name="l_name" required="required"><br/><br/>
+                <input type="text" placeholder="Birthday" name="birth" onclick="type = 'date'" required="required"><br/><br/>
+                <input type="email" placeholder="Email" name="email" required="required"><br/><br/>
+                <input type="password" placeholder="Password" name="senha_c" required="required"><br/><br/>
+                <input type="password" placeholder="Confirm Password" name="csenha_c" required="required"><br/><br/>
+                <input type="hidden" name="command" value="signup">
+                <input type="submit" name="signup" value="Sign Up">
+            </form>
+        </div>-->
     </body>
 </html>
